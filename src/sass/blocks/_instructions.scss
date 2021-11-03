@@ -1,0 +1,87 @@
+.instructions {
+    margin-top: 40px;
+    
+    &-card {
+        width: 930px;
+        height: 446px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+        padding: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 0 10px 15px 10px ;
+        &__img {
+            height: 100%;
+        }
+        &__info {
+            padding: 47px 0 0 57px;
+        }
+        &__header{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 47px;
+            color: #333333;
+        }
+        &__line {
+            width: 397px;
+            height: 0px;
+            border: 1px solid #E0E0E0;
+            margin-top: 31px; 
+        }
+        &__link {
+            a {
+                display: block;
+                width: max-content;
+                position: relative;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;  
+                color: #31B447;
+                margin-top: 31px;
+                text-decoration: none;
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    width: 0;
+                    height: 0;
+                    border: 0px solid #31B447;
+                    transition: all 1s;
+                }
+                &:hover {
+                    &::before {
+                        display: block;
+                        border: 1px solid #31B447;
+                        width: 100%;
+                    }
+                }
+            }            
+        }
+        &__marking {
+            display: flex;
+            margin-top: 20px;
+            &-item {
+                padding-right: 15px;
+            }
+        }
+    }
+
+}
+
+
+.title {
+    margin-top: 114px;
+    margin-bottom: 79px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 52px;
+    color: #333333;
+}
